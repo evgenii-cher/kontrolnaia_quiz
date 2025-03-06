@@ -1,0 +1,26 @@
+﻿<Window x:Class="kontrolnaia_quiz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kontrolnaia_quiz"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TBTextQuestion" HorizontalAlignment="Left" Height="230" Margin="192,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Background="#FFF3D7D7" FontSize="14"/>
+        <Button x:Name="ButtonStart" Content="Start / next question" HorizontalAlignment="Left" Height="84" Margin="29,46,0,0" VerticalAlignment="Top" Width="130" Click="ButtonStart_Click" IsEnabled="False"/>
+        <Button x:Name="ButtonNewQuestion" Content="New quiestion&#xD;&#xA; and Save" HorizontalAlignment="Left" Height="81" Margin="29,195,0,0" VerticalAlignment="Top" Width="130" Click="ButtonNewQuestion_Click"/>
+        <TextBox x:Name="TBNumberQuestion" HorizontalAlignment="Left" Height="30" Margin="354,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="TBuseranswer" HorizontalAlignment="Center" Height="41" Margin="0,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <Button x:Name="Button1" Content="1" HorizontalAlignment="Left" Height="50" Margin="228,348,0,0" VerticalAlignment="Top" Width="58" Click="Button1_Click"/>
+        <Button x:Name="Button2" Content="2" HorizontalAlignment="Left" Height="50" Margin="354,348,0,0" VerticalAlignment="Top" Width="58" Click="Button2_Click"/>
+        <Button x:Name="Button3" Content="3" HorizontalAlignment="Left" Height="50" Margin="472,348,0,0" VerticalAlignment="Top" Width="53" Click="Button3_Click"/>
+        <Button x:Name="ButtonClearJson" Content="Clear Json List" HorizontalAlignment="Left" Margin="661,47,0,0" VerticalAlignment="Top" Height="83" Width="89" Click="ButtonClearJson_Click"/>
+        <Label Content="Question number:" HorizontalAlignment="Left" Height="30" Margin="245,1,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label Content="При создании вопроса впишите &#xA;сюда номер правильного ответа:" HorizontalAlignment="Left" Height="41" Margin="129,291,0,0" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.561,0.332"/>
+        <TextBox x:Name="TBScore" HorizontalAlignment="Left" Height="37" Margin="661,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89"/>
+        <Label Content="Количество&#xD;&#xA;правильных&#xD;&#xA;ответов" HorizontalAlignment="Left" Height="60" Margin="661,250,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button x:Name="LoadListButton" Content="Load List" HorizontalAlignment="Left" Height="67" Margin="661,150,0,0" VerticalAlignment="Top" Width="89" Click="LoadListButton_Click"/>
+
+    </Grid>
+</Window>
